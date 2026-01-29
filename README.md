@@ -33,7 +33,7 @@ C:\Temp\AppCompat_Backup_YYYYMMDD_HHMMSS
 
 Each run creates a new timestamped backup folder, so you can always restore previous settings if needed.
 
-- How to run
+# How to run
 
 Open PowerShell as Administrator
 
