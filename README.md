@@ -1,24 +1,39 @@
-Compatibility_Fix.ps1
+# Windows AppCompat & PCA Reset Script
 
-PowerShell script to reset Windows AppCompat settings, disable the Program Compatibility Assistant (PCA), and fix compatibility issues.
+PowerShell script to reset Windows AppCompat settings, disable the Program Compatibility Assistant (PCA), and resolve common compatibility issues caused by corrupted or stuck compatibility flags.
 
-What it does
+- What this script does
 
-Backs up all relevant AppCompat registry keys
+The script performs a complete cleanup and reset of Windows compatibility data:
 
-Removes stored compatibility and PCA entries
+- Backs up all relevant AppCompat registry keys
 
-Disables the Program Compatibility Assistant
+- Removes stored compatibility and PCA entries
 
-Stops and disables the PCA Windows service
+- Disables the Program Compatibility Assistant
 
-Backup
+- Stops and disables the PCA Windows service
 
-Before making any changes, all registry entries are backed up to:
+This is useful when:
+
+Programs always run in compatibility mode
+
+Windows shows wrong compatibility warnings
+
+Old app flags break modern software
+
+PCA keeps interfering with installers or games
+
+- Backup
+
+Before making any changes, all affected registry keys are automatically backed up to:
 
 C:\Temp\AppCompat_Backup_YYYYMMDD_HHMMSS
 
-How to run
+
+Each run creates a new timestamped backup folder, so you can always restore previous settings if needed.
+
+- How to run
 
 Open PowerShell as Administrator
 
@@ -27,15 +42,26 @@ Run:
 .\Compatibility_Fix.ps1
 
 
-Restart Windows when finished
+Restart Windows after the script finishes
 
-Requirements
+- Requirements
 
-Windows 10 or 11
+Windows 10 or Windows 11
+
+PowerShell
 
 Administrator privileges
 
-Disclaimer
+⚠ Disclaimer
 
-This script modifies system registry and services. Use at your own risk.
-Backups are created automatically.
+This script modifies Windows system registry and services.
+
+Use at your own risk.
+While automatic backups are created, improper use may still lead to system instability.
+
+You are responsible for any changes made by this script.
+
+🧩 License
+
+Use, modify, and distribute freely.
+No warranty provided.
