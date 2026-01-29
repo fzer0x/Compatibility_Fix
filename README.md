@@ -61,7 +61,7 @@ While automatic backups are created, improper use may still lead to system insta
 
 You are responsible for any changes made by this script.
 
-🧩 License
+- License
 
 Use, modify, and distribute freely.
 No warranty provided.
