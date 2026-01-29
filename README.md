@@ -22,7 +22,7 @@ Windows shows wrong compatibility warnings
 
 Old app flags break modern software
 
-PCA keeps interfering with installers or games
+PCA keeps interfering with installers or games like GTA V / RageMP
 
 - Backup
 
